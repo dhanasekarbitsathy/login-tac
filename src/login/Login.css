@@ -1,0 +1,124 @@
+
+body {
+  background: linear-gradient(to right, #00bcd4, #3f51b5);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.login-title {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+}
+
+.login-logo {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input-group {
+  margin-bottom: 15px;
+}
+
+.login-label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px; /* Curved design */
+  outline: none; /* Remove outline */
+}
+
+.login-button,
+.login-google-button {
+  background: linear-gradient(to right, #4caf50, #2196f3);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.3s;
+  position: relative;
+}
+
+.login-button:hover,
+.login-google-button:hover {
+  background: linear-gradient(to right, #45a049, #1565c0);
+}
+
+.login-button:after,
+.login-google-button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4caf50, #2196f3);
+  top: 0;
+  left: 100%;
+  transition: left 0.3s;
+  z-index: -1;
+}
+
+.login-button:hover:after,
+.login-google-button:hover:after {
+  left: 0;
+}
+
+.login-or {
+  text-align: center;
+  margin: 10px 0;
+  color: #777;
+}
+
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 600px) {
+  .login-container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .login-input,
+  .login-button,
+  .login-google-button {
+    font-size: 14px;
+  }
+}
+
